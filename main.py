@@ -16,8 +16,8 @@ def pathToHl7Message(pathToHl7FolderFiles):
 
 def main():
     localPathToApp = os.getcwd()
-    pathToHl7files = localPathToApp + "\\" + "HL7Nephro"
-    #pathToHl7files = localPathToApp + "\\" + "HL7WinVision"
+    #pathToHl7files = localPathToApp + "\\" + "HL7Nephro"
+    pathToHl7files = localPathToApp + "\\" + "HL7WinVision"
     pathToHl7Message(pathToHl7files)
 
     mySftpClient = sftpClient.sftpClient(messageHeaders.esvn2Sname, messageHeaders.esvn2Spath, messageHeaders.esvn2Suser, messageHeaders.esvn2Spass)
